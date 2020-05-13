@@ -1,3 +1,6 @@
+function inducecrashforrealz() {
+    process.kill(process.pid, 'SIGTERM');
+}
 function getRandomUniformDistribution() {
     return Math.random();
 }
@@ -57,6 +60,7 @@ function dice() {
 
 module.exports.getRandomArbitrary = getRandomArbitrary;
 module.exports.getRandomInt = getRandomInt;
+module.exports.inducecrashforrealz = inducecrashforrealz;
 module.exports.getRandomIntInclusive = getRandomIntInclusive;
 module.exports.getRandomUniqueIdentifer = getRandomUniqueIdentifer;
 module.exports.getRandomPoissonDistribution = getRandomPoissonDistribution;
