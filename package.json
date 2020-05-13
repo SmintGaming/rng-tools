@@ -1,0 +1,24 @@
+{
+  "name": "rng-tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rng.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmintGaming/rng-tools.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Smint",
+    "email": "smintoverflow@gmail.com",
+    "url": "https://smintgaming.github.io/"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmintGaming/rng-tools/issues"
+  },
+  "homepage": "https://github.com/SmintGaming/rng-tools#readme"
+}
