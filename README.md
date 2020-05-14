@@ -56,4 +56,4 @@ The **getRandomUniqueIdentifer()** function returns a random UUID (Universally U
 
 `inducecrashforrealz()`
 
-The **inducecrashforrealz()** function crashes the main node.js process by using the *process.kill* method and suppling the arguments with the **Process PID** of the node.js process. Which we can find with *process.pid* method.
+The **inducecrashforrealz()** function crashes the main node.js process by using the *process.kill* method and suppling the arguments with the **Process.PID** of the node.js process.
