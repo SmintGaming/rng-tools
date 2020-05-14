@@ -4,7 +4,7 @@
   "description": "",
   "main": "rng.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "npm i -g rng-tools && node test.js"
   },
   "repository": {
     "type": "git",
