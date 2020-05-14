@@ -15,7 +15,7 @@ rngtools.getRandomInt(1, 100)  // =>  17
 rngtools.getRandomIntInclusive(1, 100)  // =>  54
 rngtools.getRandomPoissonDistribution(4)  // =>  (Mean = 4)   6
 rngtools.getRandomUniformDistribution()  // =>  0.7782257379218214
-rngtools.getRandomGammaDistribution(Comming Soon;)  // => Comming Soon   ;)
+rngtools.getRandomGammaDistribution(Coming Soon;)  // => Coming Soon   ;)
 rngtools.getRandomBinaryInt()  // =>  0
 rngtools.getRandomUniqueIdentifer()  // =>  55730a9c-4378-4ebc-9fcb-341f026d1ff3
 ```
@@ -46,9 +46,9 @@ The **getRandomArbitrary** function returns a random number between the specifie
 
 The **getRandomPoissonDistribution()** function returns a random poisson distributed values based on the mean given.
 
-`getRandomGammaDistribution(Comming Soon ;)`
+`getRandomGammaDistribution(Coming Soon ;)`
 
-The **getRandomGammaDistribution()** function is comming soon.
+The **getRandomGammaDistribution()** function is coming soon.
 
 `getRandomUniqueIdentifer()`
 
