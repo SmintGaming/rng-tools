@@ -1,4 +1,4 @@
-var rngtools = require("rng-tools");
+var rngtools = require("./rng.js");
 console.log("This rng-tools Test Is Running On Node Version " + process.version );
 console.log("");
 console.log("A Random 6-Sided Diceroll: " + rngtools.dice());
