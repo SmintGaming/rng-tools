@@ -4,6 +4,10 @@ function inducecrashforrealz() {
 function getRandomUniformDistribution() {
     return Math.random();
 }
+function getRandomGammaDistribution(params) {
+    return null;
+}
+
 function getRandomUniqueIdentifer() {
 var s = [];
 var hexDigits = "0123456789abcdef";
@@ -67,5 +71,6 @@ module.exports.getRandomIntInclusive = getRandomIntInclusive;
 module.exports.getRandomUniqueIdentifer = getRandomUniqueIdentifer;
 module.exports.getRandomPoissonDistribution = getRandomPoissonDistribution;
 module.exports.getRandomUniformDistribution = getRandomUniformDistribution;
+module.exports.getRandomGammaDistribution = getRandomGammaDistribution;
 module.exports.getRandomBinaryInt = getRandomBinaryInt;
 module.exports.dice = dice;
