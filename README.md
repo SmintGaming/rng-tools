@@ -44,7 +44,7 @@ The **getRandomArbitrary** function returns a random number between the specifie
 
 `getRandomPoissonDistribution(mean)`
 
-The **getRandomPoissonDistribution()** function returns a random poisson distributed values based on the mean given.
+The **getRandomPoissonDistribution()** function returns a random poisson distributed value based on the mean given.
 
 `getRandomGammaDistribution(Coming Soon ;)`
 
