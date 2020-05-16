@@ -5,7 +5,7 @@ function getRandomUniformDistribution() {
     return Math.random();
 }
 function getRandomGammaDistribution(params) {
-    return null;
+    return "This Feauture Is A Work In Progress";
 }
 
 function getRandomUniqueIdentifer() {
