@@ -1,6 +1,21 @@
 function inducecrashforrealz() {
     process.kill(process.pid, 'SIGTERM');
 }
+
+
+function getRandomXORShiftedValue(seed){
+
+
+    seed ^= seed << 13;
+
+    seed ^= seed >> 17;
+  
+    seed ^= seed << 5;
+  
+    return seed;
+
+}
+
 function getRandomUniformDistribution() {
     return Math.random();
 }
@@ -68,6 +83,7 @@ module.exports.getRandomArbitrary = getRandomArbitrary;
 module.exports.getRandomInt = getRandomInt;
 module.exports.inducecrashforrealz = inducecrashforrealz;
 module.exports.getRandomIntInclusive = getRandomIntInclusive;
+module.exports.getRandomXORShiftedValue = getRandomXORShiftedValue;
 module.exports.getRandomUniqueIdentifer = getRandomUniqueIdentifer;
 module.exports.getRandomPoissonDistribution = getRandomPoissonDistribution;
 module.exports.getRandomUniformDistribution = getRandomUniformDistribution;
