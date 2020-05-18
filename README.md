@@ -18,7 +18,7 @@ rngtools.getRandomUniformDistribution()  // =>  0.7782257379218214
 rngtools.getRandomGammaDistribution(params)  // => Work In Progress
 rngtools.getRandomBinaryInt()  // =>  0
 rngtools.getRandomUniqueIdentifer()  // => 55730a9c-4378-4ebc-9fcb-341f026d1ff3
-rngtools.getRandomXORShiftedValue(190) // => (Seed=190) 270369
+rngtools.getRandomXORShiftedValue(190) // => (Seed=190) 49272341
 ```
 
 
