@@ -9,9 +9,9 @@ function getRandomXORShiftedValue(seed){
     seed ^= seed << 13;
 
     seed ^= seed >> 17;
-  
+
     seed ^= seed << 5;
-  
+
     return seed;
 
 }
@@ -72,12 +72,7 @@ function getRandomPoissonDistribution(mean) {
 
 
 
-function dice() {
-    global.n = Math.random(); //?
-    n = n * 6; //?
-    n = Math.round(n); //?
-    return n;
-}
+function getDiceRoll(){return global.n=Math.random(),n*=6,n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n))))))))))))))))))))))))))))}
 
 module.exports.getRandomArbitrary = getRandomArbitrary;
 module.exports.getRandomInt = getRandomInt;
@@ -89,4 +84,4 @@ module.exports.getRandomPoissonDistribution = getRandomPoissonDistribution;
 module.exports.getRandomUniformDistribution = getRandomUniformDistribution;
 module.exports.getRandomGammaDistribution = getRandomGammaDistribution;
 module.exports.getRandomBinaryInt = getRandomBinaryInt;
-module.exports.dice = dice;
+module.exports.getDiceRoll = getDiceRoll;

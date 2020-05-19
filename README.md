@@ -9,7 +9,7 @@ var rngtools = require("rng-tools");
 
 **Then Calling The Functions**
 ```javascript
-rngtools.dice()  // =>
+rngtools.getDiceRoll()  // => 4
 rngtools.getRandomArbitrary(1, 100)  // =>  33.34029447094433
 rngtools.getRandomInt(1, 100)  // =>  17
 rngtools.getRandomIntInclusive(1, 100)  // =>  54
