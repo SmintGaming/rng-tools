@@ -49,7 +49,7 @@ The **getRandomPoissonDistribution()** function returns a random poisson distrib
 
 `getRandomGammaDistribution(params)`
 
-The **getRandomGammaDistribution()** function is a Work In Progress.
+The **getRandomGammaDistribution()** function is curently a Work In Progress.
 
 `getRandomUniqueIdentifer()`
 
