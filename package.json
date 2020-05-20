@@ -4,13 +4,15 @@
   "description": "",
   "main": "rng.js",
   "scripts": {
+    "preinstall": "echo Installing rng-tools, The Ultimate Random Number Generator Toolkit For Node.js.  ",
+    "postinstall": "echo Thanks For Install rng-tools, The Ultimate Random Number Generator Toolkit For Node.js. ",
     "test": "node test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SmintGaming/rng-tools.git"
   },
-  "keywords": [],
+  "keywords": ["rng-tools" , "rng" , "prng"],
   "author": {
     "name": "Smint",
     "email": "smintoverflow@gmail.com",
