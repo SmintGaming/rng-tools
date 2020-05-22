@@ -1,7 +1,17 @@
+var Alea = require("./alea.js");
+var arng = new Alea();
+
 function inducecrashforrealz() {
     process.kill(process.pid, 'SIGTERM');
 }
 
+
+function getRandomSeededInt32(seed){
+
+    // return arng.int32();
+    return arng.int32(seed);
+
+}
 
 function getRandomXORShiftedValue(seed){
 
@@ -71,8 +81,7 @@ function getRandomPoissonDistribution(mean) {
 }
 
 
-
-function getDiceRoll(){return global.n=Math.random(),n*=6,n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n))))))))))))))))))))))))))))}
+function getDiceRoll(){return global.n=Math.random(),n*=6,n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n),0!=n?n:(n=Math.round(n))))))))))))))))))))))))))));}
 
 module.exports.getRandomArbitrary = getRandomArbitrary;
 module.exports.getRandomInt = getRandomInt;
@@ -85,3 +94,4 @@ module.exports.getRandomUniformDistribution = getRandomUniformDistribution;
 module.exports.getRandomGammaDistribution = getRandomGammaDistribution;
 module.exports.getRandomBinaryInt = getRandomBinaryInt;
 module.exports.getDiceRoll = getDiceRoll;
+module.exports.getRandomSeededInt32 = getRandomSeededInt32;
