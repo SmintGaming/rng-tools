@@ -1,4 +1,4 @@
-var Alea = require("./alea.js");
+var Alea = require("./lib/alea");
 var arng = new Alea();
 
 function inducecrashforrealz() {
@@ -8,8 +8,8 @@ function inducecrashforrealz() {
 
 function getRandomSeededInt32(seed){
 
-    // return arng.int32();
-    return arng.int32(seed);
+    var arng = new Alea(seed);
+    return arng.int32();
 
 }
 
