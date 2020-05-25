@@ -13,6 +13,13 @@ function getRandomSeededInt32(seed){
 
 }
 
+function getRandomSeededDouble(seed){
+
+    var arng = new Alea(seed);
+    return arng.double();
+
+}
+
 function getRandomXORShiftedValue(seed){
 
 
@@ -95,3 +102,4 @@ module.exports.getRandomGammaDistribution = getRandomGammaDistribution;
 module.exports.getRandomBinaryInt = getRandomBinaryInt;
 module.exports.getDiceRoll = getDiceRoll;
 module.exports.getRandomSeededInt32 = getRandomSeededInt32;
+module.exports.getRandomSeededDouble = getRandomSeededDouble;

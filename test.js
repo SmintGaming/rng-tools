@@ -1,6 +1,8 @@
 var rngtools = require("./rng.js");
-console.log("This rng-tools Test Is Running On Node Version " + process.version );
+console.log("");
+console.log("This Test Is Running On Node Version " + process.version );
 console.log("A Random Seeded 32 Bit Signed Integer (Seed=alea): " + rngtools.getRandomSeededInt32('alea'));
+console.log("A Random Seeded 56 Bit Float (Seed=alea): " + rngtools.getRandomSeededDouble('alea'));
 console.log("A Random XOR Shifted Value (Seed=190): " + rngtools.getRandomXORShiftedValue(190));
 console.log("A Random 6-Sided Diceroll: " + rngtools.getDiceRoll());
 console.log("A Random Arbitrary Value Between 1 & 100: " + rngtools.getRandomArbitrary(1, 100));

@@ -64,6 +64,10 @@ The **getRandomXORShiftedValue()** function returns a random XOR bitshifted valu
 
 The **getRandomSeededInt32()** function returns a random 32-bit signed integer based on the input seed.
 
+`getRandomSeededDouble(seed)`
+
+The **getRandomSeededDouble()** function returns a random seeded 56-bit float based on the input seed
+
 `inducecrashforrealz()`
 
 The **inducecrashforrealz()** function crashes the main node.js process by using the *process.kill* method and suppling the arguments with the **Process.PID** of the node.js process.
