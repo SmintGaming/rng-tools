@@ -1,10 +1,35 @@
 var Alea = require("./lib/alea");
 var arng = new Alea();
+var crypto= require('crypto');
 
 function inducecrashforrealz() {
     process.kill(process.pid, 'SIGTERM');
 }
 
+var DEFAULT_BITS  = 128,
+    DEFAULT_BASE = 16,
+    DIGITS        = '0123456789abcdefghijklmnopqrstuvwxyz'.split('');
+
+var crypto = require('crypto'),
+    Seq    = require('./lib/seq');
+
+var getCryptoSecureNumber = function(bits, base) {
+  bits  = bits  || DEFAULT_BITS;
+  base = base || DEFAULT_BASE;
+
+  if (base < 2 || base > 36)
+    throw new Error('base argument must be between 2 and 36');
+
+  var length  = Math.ceil(bits * Math.log(2) / Math.log(base)),
+      entropy = crypto.randomBytes(bits),
+      stream  = new Seq(entropy),
+      string  = '';
+
+  while (string.length < length)
+    string += DIGITS[stream.generate(base)];
+
+  return string;
+};
 
 function getRandomSeededInt32(seed){
 
@@ -103,3 +128,4 @@ module.exports.getRandomBinaryInt = getRandomBinaryInt;
 module.exports.getDiceRoll = getDiceRoll;
 module.exports.getRandomSeededInt32 = getRandomSeededInt32;
 module.exports.getRandomSeededDouble = getRandomSeededDouble;
+module.exports.getCryptoSecureNumber = getCryptoSecureNumber;

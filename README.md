@@ -44,6 +44,10 @@ The **getRandomBinaryInt()** function returns a binary, pseudo-random number.
 
 The **getRandomArbitrary** function returns a random number between the specified values. The returned value is no lower than (and may possibly equal) min, and is less than (and not equal) max.
 
+`getCryptoSecureNumber(bits, base)`
+
+The **getCryptoSecureNumber()** function returns a cryptographically secure pseudo-random number based on the bitsize and base/radix inputted, default bitsize is 128 and default base/radix is 16(Hexadecimal). 
+
 `getRandomPoissonDistribution(mean)`
 
 The **getRandomPoissonDistribution()** function returns a random poisson distributed value based on the mean given.
