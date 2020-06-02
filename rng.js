@@ -31,6 +31,12 @@ var getCryptoSecureNumber = function(bits, base) {
   return string;
 };
 
+function getQuickRandomSeededNumber(seed){
+
+    var arng = new Alea(seed);
+    console.log(arng.quick());
+}
+
 function getRandomSeededInt32(seed){
 
     var arng = new Alea(seed);
@@ -129,3 +135,4 @@ module.exports.getDiceRoll = getDiceRoll;
 module.exports.getRandomSeededInt32 = getRandomSeededInt32;
 module.exports.getRandomSeededDouble = getRandomSeededDouble;
 module.exports.getCryptoSecureNumber = getCryptoSecureNumber;
+module.exports.getQuickRandomSeededNumber = getQuickRandomSeededNumber;
